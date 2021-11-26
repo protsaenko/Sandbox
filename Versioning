@@ -1,0 +1,8 @@
+Routing of pages tested in sandbox ([master])
+Created structure:
+-index.js: <Router><App></Router>
+--App: inside<Switch>  are routes to Main +login-like components(they are passed to render of Main comp as props) and route to Fuzzers (fake authorization flag)
+---Main:renders back block and login-like component on the right-hand, which has been passed as props
+----login-like component (i.e. Registration): uses <Link to='/login'> 
+	
+Issues with realization: Main component is render each time  login-like component is called by path.

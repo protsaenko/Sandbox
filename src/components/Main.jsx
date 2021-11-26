@@ -20,7 +20,7 @@ const Main = (props) => {
         justifyContent: 'space-between',
         height: '100vh'
     };
-
+    console.log('I was rendered');
 
     return (
 

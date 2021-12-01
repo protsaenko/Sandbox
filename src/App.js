@@ -16,7 +16,7 @@ import Reset from "./components/Reset";
 import Registration from "./components/Registration";
 
 function App() {
-  let author = true;
+  let author = false;
   const mainStyle = {
     display: "flex",
     justifyContent: "space-between",

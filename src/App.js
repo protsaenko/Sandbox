@@ -15,15 +15,12 @@ import Login from "./components/Login";
 import Reset from "./components/Reset";
 import Registration from "./components/Registration";
 
+
 function App() {
   let author = false;
-  const mainStyle = {
-    display: "flex",
-    justifyContent: "space-between",
-    height: "100vh",
-  };
 
   return (
+ 
     // <div style={mainStyle} className="App">
     //   <Route path="/" component={Main} />
     //   <div style={{ flex: "1", backgroundColor: "fuchsia" }}>
@@ -31,24 +28,17 @@ function App() {
     //     <Route path="/registration" component={Registration} />
     //     <Route path="/reset" component={Reset} />
     //   </div>
-    (author)? <Route path="/" component={Fuzzer} />:
-    <div style={mainStyle} className="App">
-      <Route path="/" component={Main} />
-      <div style={{ flex: "1", backgroundColor: "fuchsia" }}>
-        <Route path="/login" component={Login} />
-        <Route path="/registration" component={Registration} />
-        <Route path="/reset" component={Reset} />
-      </div>
+  
+      
+        <><Route path="/main" component={(author)?Fuzzer:Main} /> 
+     </>
+   
 
-
-
-
-
-      {/*  
-        <Redirect to="/" />
-      */}
-    </div>
-  );
+    // (author)?<Fuzzer/>:<Main/>
+    
+    )
+   
+  ;
 }
 
 export default App;

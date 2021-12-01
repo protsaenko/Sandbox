@@ -12,4 +12,8 @@
 **route_02**
 - no Switch is used so all matches are rendered
 - renders fuzz or main with other matching paths based on auth
+
+**route_03**
+-App renders Main or Fuzz (/) based on aauth flag(no route used)
+- Rendering inside main occurs with nested routing
 -  
